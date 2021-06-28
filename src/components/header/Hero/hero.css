@@ -1,0 +1,36 @@
+.group-1 h2 {
+  font-size: clamp(2.25rem, 6vw, 5rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.group-1 p {
+  font-size: clamp(1.125rem, 3vw, 1.38rem);
+}
+
+.img-container {
+  max-width: 35.25rem;
+  margin-bottom: 1em;
+}
+
+.img-container img {
+  margin-top: -3rem;
+  width: 150%;
+  max-width: 40.25rem;
+  overflow-x: hidden;
+}
+
+@media (max-width: 645px) {
+  /*  body {
+      display: none;
+    } */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .img-container img {
+    transform: translateX(2rem);
+    width: 100%;
+  }
+}
